@@ -3,8 +3,7 @@
 echo "================ Installing openjdk-9-jdk ================="
 sudo add-apt-repository -y ppa:openjdk-r/ppa
 sudo apt-get update
-sudo apt-get install openjdk-9-jdk
-sudo apt-get remove openjdk-9-jdk-headless
+sudo apt-get -o Dpkg::Options::="--force-overwrite" install openjdk-9-jdk
 
 
 
