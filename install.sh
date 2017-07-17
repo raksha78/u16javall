@@ -35,4 +35,4 @@ apt-get update
 #done
 
 
-. /u16javall/version/openjdk9.sh
+. /u16javall/version/oraclejdk9.sh
