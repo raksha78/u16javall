@@ -7,7 +7,7 @@ sudo add-apt-repository -y ppa:openjdk-r/ppa
 sudo apt-get remove openjdk-9-jdk-headless
 sudo apt-get update
 sudo apt-get remove openjdk-9-jdk-headless
-sudo apt install openjdk-9-jre
+sudo apt install openjdk-9-jdk
 sudo apt-get remove openjdk-9-jdk-headless
 sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk/bin/java" 1
 sudo update-alternatives --set java /usr/lib/jvm/jdk/bin/java-9-openjdk-amd64/jre/bin/java
