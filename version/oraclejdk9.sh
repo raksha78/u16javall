@@ -2,11 +2,12 @@
 
 echo "================ Installing oracle-java9-installer ================="
 #echo oracle-java9-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
-sudo add-apt-repository -y ppa:webupd9team/java
+sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt-get update
-sudo update-alternatives --config java 
 sudo apt-get install -y oracle-java9-installer
+sudo update-alternatives --config java 
 
 
 echo 'export JAVA_HOME=/usr/lib/jvm/java-9-oracle' >> $HOME/.bashrc
 echo 'export PATH=$PATH:/usr/lib/jvm/java-9-oracle/jre/bin' >> $HOME/.bashrc
+
