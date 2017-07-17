@@ -3,10 +3,11 @@
 echo "================ Installing openjdk-9-jdk ================="
 sudo add-apt-repository -y ppa:openjdk-r/ppa
 sudo apt-get update
-sudo apt-get remove openjdk-9-jdk-headless
-sudo apt-get install -y openjdk-9-jdk
-sudo apt-get remove openjdk-9-jdk-headless
 sudo apt-get -o Dpkg::Options::="--force-overwrite" install openjdk-9-jdk
+sudo apt-get remove openjdk-9-jdk-headless
+#sudo apt-get install -y openjdk-9-jdk
+#sudo apt-get remove openjdk-9-jdk-headless
+#sudo apt-get -o Dpkg::Options::="--force-overwrite" install openjdk-9-jdk
 
 sudo update-alternatives --set java /usr/lib/jvm/java-9-openjdk-amd64/jre/bin/java
 sudo update-alternatives --set javac /usr/lib/jvm/java-9-openjdk-amd64/bin/javac
