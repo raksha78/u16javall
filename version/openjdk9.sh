@@ -8,9 +8,9 @@ echo "================ Installing openjdk-9-jdk ================="
 #!/bin/bash -e
 
 echo "================ Installing openjdk-8-jdk ================="
-add-apt-repository -y ppa:openjdk-r/ppa
-apt-get update
-apt-get install -y openjdk-9-jdk
+sudo apt install openjdk-9-jdk
+sudo dpkg --configure -a
+sudo dpkg -i --force-overwrite '/var/cache/apt/archives/openjdk-9-jdk_9~b114-0ubuntu1_amd64.deb'
 update-alternatives --set java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
 update-alternatives --set javac /usr/lib/jvm/java-8-openjdk-amd64/bin/javac
 add-apt-repository ppa:maarten-fonville/ppa
